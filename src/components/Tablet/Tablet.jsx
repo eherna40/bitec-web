@@ -11,7 +11,7 @@ const Tablet = ({
     id
 }) => {
     return (
-        <Container onClick={() => onPress(id)} className="Tablet tw-bg-black-800 tw-p-3 tw-flex tw-text-white tw-m-5">
+        <Container onClick={() => onPress(id)} className="Tablet tw-bg-black-800 tw-p-3 tw-flex tw-text-white tw-m-5 tw-cursor-pointer">
             <Button className="tw-flex tw-items-center tw-justify-center tw-h-full tw-flex-col">
                 <Round />
                 <Round />

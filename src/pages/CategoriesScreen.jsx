@@ -21,7 +21,7 @@ const CategoriesScreen = props => {
         <Layout className='tw-p-10 tw-full ' header>
             <div className="tw-px-40 tw-flex tw-items-center tw-h-full">
                 <Line className="tw-bg-black-800" />
-                <div className="">
+                <div className="tw-cursor-pointer">
                     {
                         data.categories.map(i => {
                             return <Category {...i} onPress={() => handleSelect(i)}/>

@@ -1,7 +1,6 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Virtual from '../Miniature/Video/Virtual'
-import { useHistory } from 'react-router-dom'
 import Product from '../Miniature/Product/Product'
 
 const Listing = ({products}) => {

@@ -28,7 +28,7 @@ const ProductScreen = () => {
         <Layout head={true} btnBack={true} className="Layout" >
             <div className="tw-flex tw-flex-col tw-h-full ">
                 <div className="tw-flex tw-h-full tw-flex-1">
-                    <div className="tw-w-6/12 tw-flex-1">
+                    <div className="tw-w-6/12 tw-flex-1 tw-items-center">
                         <Carousel images={images} />
                     </div>
                     <div className="tw-flex-1 tw-relative tw-p-10 tw-flex tw-flex-col">
@@ -36,7 +36,10 @@ const ProductScreen = () => {
                             <Reference reference={reference} absolute={false} />
                             <Name name={name} />
                             <Description description={description} />
-                            <Especifications data={especifications} />
+                            <div className="tw-overflow-auto" style={{ maxHeight: 350 }}>
+                                <Especifications data={especifications} />
+                            </div>
+                            
                         </div>
                         <Selectors onPress={(i) => setInfo(i)} info={info}  />
                     </div>

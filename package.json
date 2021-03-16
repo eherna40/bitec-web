@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@brainhubeu/react-carousel": "^1.19.26",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -19,7 +20,7 @@
     "tailwindcss": "^2.0.3",
     "web-vitals": "^1.0.1"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:3000/webapp",
   "scripts": {
     "start": "npm run build:css && react-scripts start react-scripts start",
     "build:css": "postcss src/styles/tailwind.css -o src/styles/index.css ",

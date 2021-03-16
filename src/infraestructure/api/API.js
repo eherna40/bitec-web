@@ -17,8 +17,10 @@ export const selectTablet = (id) => {
     form_data.append('id_tablet', id)
     return fetch(`${baseUrl}/${api}${methods.select}`
         ,{
+
             method: 'POST',
-            body: form_data
+            body: form_data,
+
         }
     )
         .then(res => res.json())

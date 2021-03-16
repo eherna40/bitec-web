@@ -17,7 +17,7 @@ const Product = ({ images, reference, id, accesories, category, price, compare, 
     }
     if(!cover) return null
     return (
-        <div className="Product tw-relative tw-w-3/12" onClick={handleSelect}>
+        <div className="Product tw-relative tw-w-2/12" onClick={handleSelect}>
             <div className="tw-p-5 ">
                 <img src={cover ? cover?.url : ''} />
                 <Reference absolute={true} reference={reference} />
